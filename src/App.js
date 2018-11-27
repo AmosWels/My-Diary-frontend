@@ -1,28 +1,29 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Index from './components/auth/index';
+import Signup from './components/auth/signup';
+import ViewDiaries from './components/diaryEntries/viewEntries';
+import PageNotfound from './components/auth/pageNotfound';
 
+export const baseurl = 'https://mydiario3.herokuapp.com';
+const Routes = () =>(
+    <Router>
+        <Switch>
+            <Route exact strict path = {'/'} component = {Index}/>
+            <Route exact strict path = {'/auth/signup'} component = {Signup}/>
+            <Route exact strict path = {'/user/entries'} component = {ViewDiaries}/>
+            <Route component = {PageNotfound}/>
+        </Switch>
+    </Router>
+);
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div>
+                <Routes/>
+            </div>
+        );
+    }
 }
 
 export default App;
