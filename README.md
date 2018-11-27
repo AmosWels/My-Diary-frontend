@@ -1,3 +1,6 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/16a8e3bda17be6f2528e/maintainability)](https://codeclimate.com/github/AmosWels/My-Diary-frontend/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/16a8e3bda17be6f2528e/test_coverage)](https://codeclimate.com/github/AmosWels/My-Diary-frontend/test_coverage)
+[![Build Status](https://travis-ci.org/AmosWels/My-Diary-frontend.svg?branch=develop)](https://travis-ci.org/AmosWels/My-Diary-frontend)
 # MyDiario
 
 MyDiary is an online journal where users can pen down their thoughts and feelings. 
