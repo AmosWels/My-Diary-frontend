@@ -12,6 +12,9 @@ env:
   - REACT=16.6
 sudo: false
 
+before_script:
+  - npm install -g codeclimate-test-reporter
+  
 script:
   - npm run test
 
