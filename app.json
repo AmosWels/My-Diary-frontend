@@ -1,0 +1,16 @@
+{
+  "name": "My-Diary-frontend",
+  "description": "Allows users to create diaries",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
+}
