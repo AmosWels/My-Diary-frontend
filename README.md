@@ -31,4 +31,6 @@ MyDiary is an online journal where users can pen down their thoughts and feeling
 
 
 ## API
-Visit [MyDiario](https://amoswels.github.io/My-Diary-frontend/)
+Visit [MyDiario](https://amoswels.github.io/My-Diary-frontend/) at github pages
+
+Visit [MyDiario](https://mydiaryfrontend.herokuapp.com/) at Heroku
