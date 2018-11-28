@@ -1,12 +1,17 @@
-import { SIMPLE_ACTION } from "../actions/actionTypes";
+import LOGIN_ACTION from "../../actions/actionTypes";
 
-export default (state = {}, action) => {
+const initialState = {
+  user: {},
+  isLoggedIn: false
+};
+
+export default function userLogin(state = initialState, action) {
   switch (action.type) {
-  case SIMPLE_ACTION:
+  case LOGIN_ACTION:
     return {
-      result: action.payload
+      isLoggedIn: action.payload
     };
   default:
     return state;
   }
-};
+}

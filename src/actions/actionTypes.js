@@ -1,0 +1,5 @@
+const ACTION_TYPE = {
+  LOGIN_ACTION : "LOGIN_ACTION",
+  SIGNUP_ACTION : "SIGNUP_ACTION"
+};
+export default ACTION_TYPE;

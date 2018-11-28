@@ -1,3 +1,0 @@
-const ACTION_TYPES = {
-    LOGIN_SUCCESFUL = 'LOGIN_USER'
-}

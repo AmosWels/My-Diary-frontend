@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class PageNotfound extends Component {
     state = { 
     }
     render() { 
-        return ( 
-            <h1>Page Not found</h1>
-        );
+      return ( 
+        <h1>Page Not found</h1>
+      );
     }
 }
  
