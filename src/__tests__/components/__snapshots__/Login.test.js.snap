@@ -3,11 +3,11 @@
 exports[`SignupUser component should render correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Signup
+  Symbol(enzyme.__unrendered__): <Index
     confirm_password=""
     dispatch={[MockFunction]}
     handleChange={[MockFunction]}
-    handleSignup={[MockFunction]}
+    handleLogin={[MockFunction]}
     history={
       Object {
         "push": [MockFunction],
@@ -15,7 +15,7 @@ ShallowWrapper {
     }
     location={
       Object {
-        "pathname": "/auth/signup",
+        "pathname": "/entries",
       }
     }
     password=""
@@ -44,11 +44,11 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <SignUpView
+      "children": <LoginView
         confirm_password=""
         dispatch={[MockFunction]}
         handleChange={[Function]}
-        handleSignup={[Function]}
+        handleLogin={[Function]}
         history={
           Object {
             "push": [MockFunction],
@@ -56,7 +56,7 @@ ShallowWrapper {
         }
         location={
           Object {
-            "pathname": "/auth/signup",
+            "pathname": "/entries",
           }
         }
         password=""
@@ -82,12 +82,12 @@ ShallowWrapper {
         "confirm_password": "",
         "dispatch": [MockFunction],
         "handleChange": [Function],
-        "handleSignup": [Function],
+        "handleLogin": [Function],
         "history": Object {
           "push": [MockFunction],
         },
         "location": Object {
-          "pathname": "/auth/signup",
+          "pathname": "/entries",
         },
         "password": "",
         "store": Object {
@@ -112,11 +112,11 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <SignUpView
+        "children": <LoginView
           confirm_password=""
           dispatch={[MockFunction]}
           handleChange={[Function]}
-          handleSignup={[Function]}
+          handleLogin={[Function]}
           history={
             Object {
               "push": [MockFunction],
@@ -124,7 +124,7 @@ ShallowWrapper {
           }
           location={
             Object {
-              "pathname": "/auth/signup",
+              "pathname": "/entries",
             }
           }
           password=""
@@ -150,12 +150,12 @@ ShallowWrapper {
           "confirm_password": "",
           "dispatch": [MockFunction],
           "handleChange": [Function],
-          "handleSignup": [Function],
+          "handleLogin": [Function],
           "history": Object {
             "push": [MockFunction],
           },
           "location": Object {
-            "pathname": "/auth/signup",
+            "pathname": "/entries",
           },
           "password": "",
           "store": Object {

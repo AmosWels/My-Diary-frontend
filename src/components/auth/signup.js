@@ -12,8 +12,8 @@ class Signup extends Component {
     confirm_password: ""
   };
 
-  componentWillReceiveProps(nextprops){
-    if(nextprops.user.user.Message ==="Created Succesfully"){
+  componentWillReceiveProps(nextprops) {
+    if (nextprops.user.user.Message === "Created Succesfully") {
       nextprops.history.push("/");
     }
   }
@@ -34,7 +34,7 @@ class Signup extends Component {
     } else {
       const data = {
         username: this.state.username,
-        password: this.state.password,
+        password: this.state.password
       };
       this.props.dispatch(signupAction(data));
     }
@@ -45,6 +45,7 @@ class Signup extends Component {
     return (
       <div>
         <SignUpView
+          {...this.props}
           handleChange={this.handleChange}
           handleSignup={this.handleSignup}
           username={username}
@@ -57,12 +58,13 @@ class Signup extends Component {
 }
 Signup.propTypes = {
   dispatch: PropTypes.func,
-  user:PropTypes.object
+  user: PropTypes.object
 };
 const mapDispatchToProps = dispatch => ({ dispatch });
 const mapStateToProps = state => ({
   user: state.userSignUp
 });
+export {Signup as SignupTest};
 export default connect(
   mapStateToProps,
   mapDispatchToProps
