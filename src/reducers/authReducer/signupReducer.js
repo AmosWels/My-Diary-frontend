@@ -1,12 +1,12 @@
-import  SIGNUP_ACTION  from "../../actions/actionTypes";
+import ACTION_TYPE from "../../actions/actionTypes";
 
-export const initialState = {
-  user:{}
+const initialState = {
+  user: {}
 };
 
-export default function userSignUp(state = initialState, action) {
+const userSignUp =(state = initialState, action) =>{
   switch (action.type) {
-  case SIGNUP_ACTION:
+  case ACTION_TYPE.SIGNUP_ACTION:
     return {
       ...state,
       user: action.payload
@@ -14,4 +14,5 @@ export default function userSignUp(state = initialState, action) {
   default:
     return state;
   }
-}
+};
+export default userSignUp;

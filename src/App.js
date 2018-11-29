@@ -1,27 +1,18 @@
-import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Index from "./components/auth/index";
-import Signup from "./components/auth/signup";
-import ViewDiaries from "./components/diaryEntries/viewEntries";
-import PageNotfound from "./components/auth/pageNotfound";
-
-export const baseurl = "https://mydiario3.herokuapp.com";
-const Routes = () =>(
-  <Router>
-    <Switch>
-      <Route exact strict path = {"/"} component = {Index}/>
-      <Route exact strict path = {"/auth/signup"} component = {Signup}/>
-      <Route exact strict path = {"/user/entries"} component = {ViewDiaries}/>
-      <Route component = {PageNotfound}/>
-    </Switch>
-  </Router>
-);
+import React, { Component ,Fragment} from "react";
+import { Routes } from "./routes/routes";
+import { ToastContainer } from "react-toastify";
+import { Provider } from "react-redux";
+import store from "./store/";
+import "react-toastify/dist/ReactToastify.min.css";
 class App extends Component {
   render() {
     return (
-      <div>
-        <Routes/>
-      </div>
+      <Provider store={store}>
+        <Fragment>
+          <ToastContainer />
+          <Routes/>
+        </Fragment>
+      </Provider>
     );
   }
 }
