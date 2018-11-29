@@ -1,10 +1,10 @@
 import ACTION_TYPE from "../../actions/actionTypes";
 
 const initialState = {
-  user: {}
+  user: {},
 };
 
-const userSignUp =(state = initialState, action) =>{
+const userSignUp = (state = initialState, action) => {
   switch (action.type) {
   case ACTION_TYPE.SIGNUP_ACTION:
     return {

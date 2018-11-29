@@ -5,9 +5,12 @@
   "home": "https://amosWels.github.io/My-Diary-frontend/",
   "dependencies": {
     "axios": "^0.18.0",
+    "axios-mock-adapter": "^1.15.0",
     "gh-pages": "^2.0.1",
+    "jwt-decode": "^2.2.0",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
+    "react-mock-router": "^1.0.15",
     "react-notifications": "^1.4.3",
     "react-notifications-component": "^0.1.1",
     "react-redux": "^5.1.0",
@@ -42,7 +45,6 @@
     "not ie <= 11",
     "not op_mini all"
   ],
- 
   "devDependencies": {
     "babel-eslint": "^9.0.0",
     "dotenv": "^6.1.0",

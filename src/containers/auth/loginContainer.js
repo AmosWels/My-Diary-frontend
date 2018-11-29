@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 import "../../static/style.css";
 import {
   Button,
@@ -16,7 +17,7 @@ import {
   Row
 } from "reactstrap";
 
-const LoginView = () => {
+const LoginView = ({ handleLogin, handleChange, username, password }) => {
   return (
     <div>
       <div className="app flex-row align-items-center">
@@ -26,7 +27,7 @@ const LoginView = () => {
               <CardGroup>
                 <Card className="p-4">
                   <CardBody>
-                    <Form>
+                    <Form onSubmit={handleLogin}>
                       <h1>Login</h1>
                       <p className="text-muted">Sign In to My Diary</p>
                       <InputGroup className="mb-3">
@@ -39,6 +40,10 @@ const LoginView = () => {
                           type="text"
                           placeholder="Username"
                           autoComplete="username"
+                          name="username"
+                          onChange={handleChange}
+                          value={username}
+                          required
                         />
                       </InputGroup>
                       <InputGroup className="mb-4">
@@ -51,11 +56,19 @@ const LoginView = () => {
                           type="password"
                           placeholder="Password"
                           autoComplete="current-password"
+                          name="password"
+                          onChange={handleChange}
+                          value={password}
+                          required
                         />
                       </InputGroup>
                       <Row>
                         <Col xs="6">
-                          <Button color="primary" className="px-4">
+                          <Button
+                            color="primary"
+                            className="px-4"
+                            type="submit"
+                          >
                             Login
                           </Button>
                         </Col>
@@ -99,6 +112,12 @@ const LoginView = () => {
       </div>
     </div>
   );
+};
+LoginView.propTypes = {
+  handleLogin: PropTypes.func,
+  handleChange: PropTypes.func,
+  username: PropTypes.string,
+  password: PropTypes.string
 };
 
 export default LoginView;

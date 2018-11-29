@@ -24,7 +24,7 @@ body {
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: midnightblue;
+    background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/confectionary.png);
 }
 
 #share_text {
@@ -89,7 +89,6 @@ html {
 .container {
   margin: 200px;
   min-height: 100vh;
-  /* display:flex; */
   align-items: center;
   justify-content: center; 
   flex-wrap: nowrap;

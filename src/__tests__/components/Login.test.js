@@ -1,21 +1,21 @@
 import React from "react";
 import { shallow, configure } from "enzyme";
 import configureMockStore from "redux-mock-store";
-import { SignupTest } from "../../components/auth/signup";
+import { IndexTest } from "../../components/auth/index";
 import Adapter from "enzyme-adapter-react-16";
 configure({ adapter: new Adapter() });
 
 describe("SignupUser component", () => {
-  const history = {push : jest.fn()};
+  const history = { push: jest.fn() };
   const props = {
     history,
     handleChange: jest.fn(),
-    handleSignup: jest.fn(),
+    handleLogin: jest.fn(),
     dispatch: jest.fn(),
     username: "",
     password: "",
     confirm_password: "",
-    location: { pathname: "/auth/signup" }
+    location: { pathname: "/entries" }
   };
   const getEvent = (name = "", value = "") => ({
     preventDefault: jest.fn(),
@@ -29,7 +29,7 @@ describe("SignupUser component", () => {
 
   beforeEach(() => {
     const store = mockStore({});
-    wrapper = shallow(<SignupTest {...props} store={store} />);
+    wrapper = shallow(<IndexTest {...props} store={store} />);
   });
   it("should render correctly", () => {
     expect(wrapper).toMatchSnapshot();
@@ -40,28 +40,28 @@ describe("SignupUser component", () => {
     expect(wrapper.state().username).toEqual("johnson");
   });
 
-  it("should handle signup when called", () => {
-    wrapper.instance().handleSignup(getEvent());
+  it("should handle Login when called", () => {
+    wrapper.instance().handleLogin(getEvent());
     expect(wrapper.state().username).toEqual("");
   });
 
-  it("should not redirect after signup failure", () => {
+  it("should not redirect after login failure", () => {
     const nextprops = {
-      user:{
-        user:{ Message:"Created Succesfull"}
+      userdata: {
+        isLoggedIn: false
       }
     };
-    wrapper.setProps({...nextprops});
+    wrapper.setProps({ ...nextprops });
     expect(history.push).not.toBeCalled();
   });
 
   it("should redirect after succesful signup", () => {
     const nextprops = {
-      user:{
-        user:{ Message:"Created Succesfully"}
+      userdata: {
+        isLoggedIn: { Message: "welcome, you have succesfully logged in !!!" }
       }
     };
-    wrapper.setProps({...nextprops});
+    wrapper.setProps({ ...nextprops });
     expect(history.push).toBeCalled();
   });
 });
