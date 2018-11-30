@@ -8,9 +8,11 @@ class Index extends Component {
     username: "",
     password: ""
   };
+
   componentWillReceiveProps(nextprops) {
-    if (nextprops.userdata.isLoggedIn !== false) {
-      nextprops.history.push("/entries");
+    if (nextprops.userdata.isLoggedIn) {
+      localStorage.setItem("token", nextprops.userdata.user.token);
+      window.location = "/entries";
     }
   }
 
@@ -51,7 +53,7 @@ const mapDispatchToProps = dispatch => ({ dispatch });
 const mapStateToProps = state => ({
   userdata: state.userLogin
 });
-export {Index as IndexTest};
+export { Index as IndexTest };
 export default connect(
   mapStateToProps,
   mapDispatchToProps

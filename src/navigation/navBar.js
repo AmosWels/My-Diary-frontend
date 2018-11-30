@@ -1,6 +1,8 @@
 import React from "react";
 import "../static/navBar.css";
+import { clearToken } from "../utils/myHeaders";
 import {
+  Button,
   Collapse,
   Navbar,
   NavbarToggler,
@@ -26,27 +28,33 @@ class NavBar extends React.Component {
     return (
       <div>
         <Navbar light expand="md" id="mynav">
-          <NavbarBrand href="/view-articles" id="navbar-brand">
-            My Diary
+          <NavbarBrand href="/entries" id="navbar-brand">
+            Welcome To Your Diary
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <ul className="navbar-nav">
                 <li className="nav-item active">
-                  <a className="nav-link" href="/" id="navv-link">
-                    Welcome To Your Diary
-                  </a>
+                  <Button block color="link" id="btn_link">
+                    Create Entry
+                  </Button>
                 </li>
                 <li className="nav-item active">
-                  <a className="nav-link" href="/" id="navv-link">
+                  <Button block color="link" id="btn_link">
                     Profile
-                  </a>
+                  </Button>
                 </li>
                 <li className="nav-item active">
-                  <a className="nav-link" href="/" id="navv-link">
+                  <Button
+                    block
+                    color="link"
+                    id="btn_link"
+                    href="/"
+                    onClick={()=>clearToken()}
+                  >
                     Logout
-                  </a>
+                  </Button>
                 </li>
                 <li className="nav-item active">
                   <img
