@@ -4,6 +4,7 @@ exports[`SignupUser component should render correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <NavBar
+    clearToken={[MockFunction]}
     isOpen={false}
     setState={[MockFunction]}
     toggle={[MockFunction]}
@@ -28,11 +29,11 @@ ShallowWrapper {
         tag="nav"
       >
         <NavbarBrand
-          href="/view-articles"
+          href="/entries"
           id="navbar-brand"
           tag="a"
         >
-          My Diary
+          Welcome To Your Diary
         </NavbarBrand>
         <NavbarToggler
           onClick={[Function]}
@@ -69,35 +70,40 @@ ShallowWrapper {
               <li
                 className="nav-item active"
               >
-                <a
-                  className="nav-link"
-                  href="/"
-                  id="navv-link"
+                <Button
+                  block={true}
+                  color="link"
+                  id="btn_link"
+                  tag="button"
                 >
-                  Welcome To Your Diary
-                </a>
+                  Create Entry
+                </Button>
               </li>
               <li
                 className="nav-item active"
               >
-                <a
-                  className="nav-link"
-                  href="/"
-                  id="navv-link"
+                <Button
+                  block={true}
+                  color="link"
+                  id="btn_link"
+                  tag="button"
                 >
                   Profile
-                </a>
+                </Button>
               </li>
               <li
                 className="nav-item active"
               >
-                <a
-                  className="nav-link"
+                <Button
+                  block={true}
+                  color="link"
                   href="/"
-                  id="navv-link"
+                  id="btn_link"
+                  onClick={[Function]}
+                  tag="button"
                 >
                   Logout
-                </a>
+                </Button>
               </li>
               <li
                 className="nav-item active"
@@ -129,11 +135,11 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <NavbarBrand
-            href="/view-articles"
+            href="/entries"
             id="navbar-brand"
             tag="a"
           >
-            My Diary
+            Welcome To Your Diary
           </NavbarBrand>,
           <NavbarToggler
             onClick={[Function]}
@@ -170,35 +176,40 @@ ShallowWrapper {
                 <li
                   className="nav-item active"
                 >
-                  <a
-                    className="nav-link"
-                    href="/"
-                    id="navv-link"
+                  <Button
+                    block={true}
+                    color="link"
+                    id="btn_link"
+                    tag="button"
                   >
-                    Welcome To Your Diary
-                  </a>
+                    Create Entry
+                  </Button>
                 </li>
                 <li
                   className="nav-item active"
                 >
-                  <a
-                    className="nav-link"
-                    href="/"
-                    id="navv-link"
+                  <Button
+                    block={true}
+                    color="link"
+                    id="btn_link"
+                    tag="button"
                   >
                     Profile
-                  </a>
+                  </Button>
                 </li>
                 <li
                   className="nav-item active"
                 >
-                  <a
-                    className="nav-link"
+                  <Button
+                    block={true}
+                    color="link"
                     href="/"
-                    id="navv-link"
+                    id="btn_link"
+                    onClick={[Function]}
+                    tag="button"
                   >
                     Logout
-                  </a>
+                  </Button>
                 </li>
                 <li
                   className="nav-item active"
@@ -233,13 +244,13 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "children": "My Diary",
-            "href": "/view-articles",
+            "children": "Welcome To Your Diary",
+            "href": "/entries",
             "id": "navbar-brand",
             "tag": "a",
           },
           "ref": null,
-          "rendered": "My Diary",
+          "rendered": "Welcome To Your Diary",
           "type": [Function],
         },
         Object {
@@ -273,35 +284,40 @@ ShallowWrapper {
                 <li
                   className="nav-item active"
                 >
-                  <a
-                    className="nav-link"
-                    href="/"
-                    id="navv-link"
+                  <Button
+                    block={true}
+                    color="link"
+                    id="btn_link"
+                    tag="button"
                   >
-                    Welcome To Your Diary
-                  </a>
+                    Create Entry
+                  </Button>
                 </li>
                 <li
                   className="nav-item active"
                 >
-                  <a
-                    className="nav-link"
-                    href="/"
-                    id="navv-link"
+                  <Button
+                    block={true}
+                    color="link"
+                    id="btn_link"
+                    tag="button"
                   >
                     Profile
-                  </a>
+                  </Button>
                 </li>
                 <li
                   className="nav-item active"
                 >
-                  <a
-                    className="nav-link"
+                  <Button
+                    block={true}
+                    color="link"
                     href="/"
-                    id="navv-link"
+                    id="btn_link"
+                    onClick={[Function]}
+                    tag="button"
                   >
                     Logout
-                  </a>
+                  </Button>
                 </li>
                 <li
                   className="nav-item active"
@@ -350,35 +366,40 @@ ShallowWrapper {
                 <li
                   className="nav-item active"
                 >
-                  <a
-                    className="nav-link"
-                    href="/"
-                    id="navv-link"
+                  <Button
+                    block={true}
+                    color="link"
+                    id="btn_link"
+                    tag="button"
                   >
-                    Welcome To Your Diary
-                  </a>
+                    Create Entry
+                  </Button>
                 </li>
                 <li
                   className="nav-item active"
                 >
-                  <a
-                    className="nav-link"
-                    href="/"
-                    id="navv-link"
+                  <Button
+                    block={true}
+                    color="link"
+                    id="btn_link"
+                    tag="button"
                   >
                     Profile
-                  </a>
+                  </Button>
                 </li>
                 <li
                   className="nav-item active"
                 >
-                  <a
-                    className="nav-link"
+                  <Button
+                    block={true}
+                    color="link"
                     href="/"
-                    id="navv-link"
+                    id="btn_link"
+                    onClick={[Function]}
+                    tag="button"
                   >
                     Logout
-                  </a>
+                  </Button>
                 </li>
                 <li
                   className="nav-item active"
@@ -413,35 +434,40 @@ ShallowWrapper {
                   <li
                     className="nav-item active"
                   >
-                    <a
-                      className="nav-link"
-                      href="/"
-                      id="navv-link"
+                    <Button
+                      block={true}
+                      color="link"
+                      id="btn_link"
+                      tag="button"
                     >
-                      Welcome To Your Diary
-                    </a>
+                      Create Entry
+                    </Button>
                   </li>,
                   <li
                     className="nav-item active"
                   >
-                    <a
-                      className="nav-link"
-                      href="/"
-                      id="navv-link"
+                    <Button
+                      block={true}
+                      color="link"
+                      id="btn_link"
+                      tag="button"
                     >
                       Profile
-                    </a>
+                    </Button>
                   </li>,
                   <li
                     className="nav-item active"
                   >
-                    <a
-                      className="nav-link"
+                    <Button
+                      block={true}
+                      color="link"
                       href="/"
-                      id="navv-link"
+                      id="btn_link"
+                      onClick={[Function]}
+                      tag="button"
                     >
                       Logout
-                    </a>
+                    </Button>
                   </li>,
                   <li
                     className="nav-item active"
@@ -470,29 +496,31 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": <a
-                      className="nav-link"
-                      href="/"
-                      id="navv-link"
+                    "children": <Button
+                      block={true}
+                      color="link"
+                      id="btn_link"
+                      tag="button"
                     >
-                      Welcome To Your Diary
-                    </a>,
+                      Create Entry
+                    </Button>,
                     "className": "nav-item active",
                   },
                   "ref": null,
                   "rendered": Object {
                     "instance": null,
                     "key": undefined,
-                    "nodeType": "host",
+                    "nodeType": "class",
                     "props": Object {
-                      "children": "Welcome To Your Diary",
-                      "className": "nav-link",
-                      "href": "/",
-                      "id": "navv-link",
+                      "block": true,
+                      "children": "Create Entry",
+                      "color": "link",
+                      "id": "btn_link",
+                      "tag": "button",
                     },
                     "ref": null,
-                    "rendered": "Welcome To Your Diary",
-                    "type": "a",
+                    "rendered": "Create Entry",
+                    "type": [Function],
                   },
                   "type": "li",
                 },
@@ -501,29 +529,31 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": <a
-                      className="nav-link"
-                      href="/"
-                      id="navv-link"
+                    "children": <Button
+                      block={true}
+                      color="link"
+                      id="btn_link"
+                      tag="button"
                     >
                       Profile
-                    </a>,
+                    </Button>,
                     "className": "nav-item active",
                   },
                   "ref": null,
                   "rendered": Object {
                     "instance": null,
                     "key": undefined,
-                    "nodeType": "host",
+                    "nodeType": "class",
                     "props": Object {
+                      "block": true,
                       "children": "Profile",
-                      "className": "nav-link",
-                      "href": "/",
-                      "id": "navv-link",
+                      "color": "link",
+                      "id": "btn_link",
+                      "tag": "button",
                     },
                     "ref": null,
                     "rendered": "Profile",
-                    "type": "a",
+                    "type": [Function],
                   },
                   "type": "li",
                 },
@@ -532,29 +562,35 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": <a
-                      className="nav-link"
+                    "children": <Button
+                      block={true}
+                      color="link"
                       href="/"
-                      id="navv-link"
+                      id="btn_link"
+                      onClick={[Function]}
+                      tag="button"
                     >
                       Logout
-                    </a>,
+                    </Button>,
                     "className": "nav-item active",
                   },
                   "ref": null,
                   "rendered": Object {
                     "instance": null,
                     "key": undefined,
-                    "nodeType": "host",
+                    "nodeType": "class",
                     "props": Object {
+                      "block": true,
                       "children": "Logout",
-                      "className": "nav-link",
+                      "color": "link",
                       "href": "/",
-                      "id": "navv-link",
+                      "id": "btn_link",
+                      "onClick": [Function],
+                      "tag": "button",
                     },
                     "ref": null,
                     "rendered": "Logout",
-                    "type": "a",
+                    "type": [Function],
                   },
                   "type": "li",
                 },
@@ -637,11 +673,11 @@ ShallowWrapper {
           tag="nav"
         >
           <NavbarBrand
-            href="/view-articles"
+            href="/entries"
             id="navbar-brand"
             tag="a"
           >
-            My Diary
+            Welcome To Your Diary
           </NavbarBrand>
           <NavbarToggler
             onClick={[Function]}
@@ -678,35 +714,40 @@ ShallowWrapper {
                 <li
                   className="nav-item active"
                 >
-                  <a
-                    className="nav-link"
-                    href="/"
-                    id="navv-link"
+                  <Button
+                    block={true}
+                    color="link"
+                    id="btn_link"
+                    tag="button"
                   >
-                    Welcome To Your Diary
-                  </a>
+                    Create Entry
+                  </Button>
                 </li>
                 <li
                   className="nav-item active"
                 >
-                  <a
-                    className="nav-link"
-                    href="/"
-                    id="navv-link"
+                  <Button
+                    block={true}
+                    color="link"
+                    id="btn_link"
+                    tag="button"
                   >
                     Profile
-                  </a>
+                  </Button>
                 </li>
                 <li
                   className="nav-item active"
                 >
-                  <a
-                    className="nav-link"
+                  <Button
+                    block={true}
+                    color="link"
                     href="/"
-                    id="navv-link"
+                    id="btn_link"
+                    onClick={[Function]}
+                    tag="button"
                   >
                     Logout
-                  </a>
+                  </Button>
                 </li>
                 <li
                   className="nav-item active"
@@ -738,11 +779,11 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <NavbarBrand
-              href="/view-articles"
+              href="/entries"
               id="navbar-brand"
               tag="a"
             >
-              My Diary
+              Welcome To Your Diary
             </NavbarBrand>,
             <NavbarToggler
               onClick={[Function]}
@@ -779,35 +820,40 @@ ShallowWrapper {
                   <li
                     className="nav-item active"
                   >
-                    <a
-                      className="nav-link"
-                      href="/"
-                      id="navv-link"
+                    <Button
+                      block={true}
+                      color="link"
+                      id="btn_link"
+                      tag="button"
                     >
-                      Welcome To Your Diary
-                    </a>
+                      Create Entry
+                    </Button>
                   </li>
                   <li
                     className="nav-item active"
                   >
-                    <a
-                      className="nav-link"
-                      href="/"
-                      id="navv-link"
+                    <Button
+                      block={true}
+                      color="link"
+                      id="btn_link"
+                      tag="button"
                     >
                       Profile
-                    </a>
+                    </Button>
                   </li>
                   <li
                     className="nav-item active"
                   >
-                    <a
-                      className="nav-link"
+                    <Button
+                      block={true}
+                      color="link"
                       href="/"
-                      id="navv-link"
+                      id="btn_link"
+                      onClick={[Function]}
+                      tag="button"
                     >
                       Logout
-                    </a>
+                    </Button>
                   </li>
                   <li
                     className="nav-item active"
@@ -842,13 +888,13 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "children": "My Diary",
-              "href": "/view-articles",
+              "children": "Welcome To Your Diary",
+              "href": "/entries",
               "id": "navbar-brand",
               "tag": "a",
             },
             "ref": null,
-            "rendered": "My Diary",
+            "rendered": "Welcome To Your Diary",
             "type": [Function],
           },
           Object {
@@ -882,35 +928,40 @@ ShallowWrapper {
                   <li
                     className="nav-item active"
                   >
-                    <a
-                      className="nav-link"
-                      href="/"
-                      id="navv-link"
+                    <Button
+                      block={true}
+                      color="link"
+                      id="btn_link"
+                      tag="button"
                     >
-                      Welcome To Your Diary
-                    </a>
+                      Create Entry
+                    </Button>
                   </li>
                   <li
                     className="nav-item active"
                   >
-                    <a
-                      className="nav-link"
-                      href="/"
-                      id="navv-link"
+                    <Button
+                      block={true}
+                      color="link"
+                      id="btn_link"
+                      tag="button"
                     >
                       Profile
-                    </a>
+                    </Button>
                   </li>
                   <li
                     className="nav-item active"
                   >
-                    <a
-                      className="nav-link"
+                    <Button
+                      block={true}
+                      color="link"
                       href="/"
-                      id="navv-link"
+                      id="btn_link"
+                      onClick={[Function]}
+                      tag="button"
                     >
                       Logout
-                    </a>
+                    </Button>
                   </li>
                   <li
                     className="nav-item active"
@@ -959,35 +1010,40 @@ ShallowWrapper {
                   <li
                     className="nav-item active"
                   >
-                    <a
-                      className="nav-link"
-                      href="/"
-                      id="navv-link"
+                    <Button
+                      block={true}
+                      color="link"
+                      id="btn_link"
+                      tag="button"
                     >
-                      Welcome To Your Diary
-                    </a>
+                      Create Entry
+                    </Button>
                   </li>
                   <li
                     className="nav-item active"
                   >
-                    <a
-                      className="nav-link"
-                      href="/"
-                      id="navv-link"
+                    <Button
+                      block={true}
+                      color="link"
+                      id="btn_link"
+                      tag="button"
                     >
                       Profile
-                    </a>
+                    </Button>
                   </li>
                   <li
                     className="nav-item active"
                   >
-                    <a
-                      className="nav-link"
+                    <Button
+                      block={true}
+                      color="link"
                       href="/"
-                      id="navv-link"
+                      id="btn_link"
+                      onClick={[Function]}
+                      tag="button"
                     >
                       Logout
-                    </a>
+                    </Button>
                   </li>
                   <li
                     className="nav-item active"
@@ -1022,35 +1078,40 @@ ShallowWrapper {
                     <li
                       className="nav-item active"
                     >
-                      <a
-                        className="nav-link"
-                        href="/"
-                        id="navv-link"
+                      <Button
+                        block={true}
+                        color="link"
+                        id="btn_link"
+                        tag="button"
                       >
-                        Welcome To Your Diary
-                      </a>
+                        Create Entry
+                      </Button>
                     </li>,
                     <li
                       className="nav-item active"
                     >
-                      <a
-                        className="nav-link"
-                        href="/"
-                        id="navv-link"
+                      <Button
+                        block={true}
+                        color="link"
+                        id="btn_link"
+                        tag="button"
                       >
                         Profile
-                      </a>
+                      </Button>
                     </li>,
                     <li
                       className="nav-item active"
                     >
-                      <a
-                        className="nav-link"
+                      <Button
+                        block={true}
+                        color="link"
                         href="/"
-                        id="navv-link"
+                        id="btn_link"
+                        onClick={[Function]}
+                        tag="button"
                       >
                         Logout
-                      </a>
+                      </Button>
                     </li>,
                     <li
                       className="nav-item active"
@@ -1079,29 +1140,31 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": <a
-                        className="nav-link"
-                        href="/"
-                        id="navv-link"
+                      "children": <Button
+                        block={true}
+                        color="link"
+                        id="btn_link"
+                        tag="button"
                       >
-                        Welcome To Your Diary
-                      </a>,
+                        Create Entry
+                      </Button>,
                       "className": "nav-item active",
                     },
                     "ref": null,
                     "rendered": Object {
                       "instance": null,
                       "key": undefined,
-                      "nodeType": "host",
+                      "nodeType": "class",
                       "props": Object {
-                        "children": "Welcome To Your Diary",
-                        "className": "nav-link",
-                        "href": "/",
-                        "id": "navv-link",
+                        "block": true,
+                        "children": "Create Entry",
+                        "color": "link",
+                        "id": "btn_link",
+                        "tag": "button",
                       },
                       "ref": null,
-                      "rendered": "Welcome To Your Diary",
-                      "type": "a",
+                      "rendered": "Create Entry",
+                      "type": [Function],
                     },
                     "type": "li",
                   },
@@ -1110,29 +1173,31 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": <a
-                        className="nav-link"
-                        href="/"
-                        id="navv-link"
+                      "children": <Button
+                        block={true}
+                        color="link"
+                        id="btn_link"
+                        tag="button"
                       >
                         Profile
-                      </a>,
+                      </Button>,
                       "className": "nav-item active",
                     },
                     "ref": null,
                     "rendered": Object {
                       "instance": null,
                       "key": undefined,
-                      "nodeType": "host",
+                      "nodeType": "class",
                       "props": Object {
+                        "block": true,
                         "children": "Profile",
-                        "className": "nav-link",
-                        "href": "/",
-                        "id": "navv-link",
+                        "color": "link",
+                        "id": "btn_link",
+                        "tag": "button",
                       },
                       "ref": null,
                       "rendered": "Profile",
-                      "type": "a",
+                      "type": [Function],
                     },
                     "type": "li",
                   },
@@ -1141,29 +1206,35 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": <a
-                        className="nav-link"
+                      "children": <Button
+                        block={true}
+                        color="link"
                         href="/"
-                        id="navv-link"
+                        id="btn_link"
+                        onClick={[Function]}
+                        tag="button"
                       >
                         Logout
-                      </a>,
+                      </Button>,
                       "className": "nav-item active",
                     },
                     "ref": null,
                     "rendered": Object {
                       "instance": null,
                       "key": undefined,
-                      "nodeType": "host",
+                      "nodeType": "class",
                       "props": Object {
+                        "block": true,
                         "children": "Logout",
-                        "className": "nav-link",
+                        "color": "link",
                         "href": "/",
-                        "id": "navv-link",
+                        "id": "btn_link",
+                        "onClick": [Function],
+                        "tag": "button",
                       },
                       "ref": null,
                       "rendered": "Logout",
-                      "type": "a",
+                      "type": [Function],
                     },
                     "type": "li",
                   },

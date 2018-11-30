@@ -92,7 +92,6 @@ html {
   align-items: center;
   justify-content: center; 
   flex-wrap: nowrap;
-  /* max-width: 500px; */
 }
 .tab_container {
   margin-top: 2px;
@@ -101,7 +100,9 @@ html {
 .row{
   margin-right: 0cm !important;
 }
-
+#column_gap{
+  height: 220px;
+}
 .rightSide {
   padding-left: 2cm !important;
 }
@@ -143,6 +144,9 @@ html {
   .pic-container {
     column-count: 1;
   }
+  .actions {
+    margin-left: 30px;
+  }
 }
 
 #navbarDropdownMenuLink {
@@ -165,4 +169,16 @@ a:hover {
 
 #top_width{
   margin-top:2px !important;
+}
+#cardlink{
+  font-size: 12px;
+}
+.actions {
+  margin-left: 50px;
+}
+#btn_link{
+  color: #fff !important;
+}
+#entrymessage{
+  font-size: 16px;
 }

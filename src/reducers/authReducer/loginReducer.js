@@ -1,6 +1,7 @@
 import ACTION_TYPE from "../../actions/actionTypes";
 
 const initialState = {
+  user:{},
   isLoggedIn: false
 };
 
@@ -9,7 +10,8 @@ export default function userLogin(state = initialState, action) {
   case ACTION_TYPE.LOGIN_ACTION:
     return {
       ...state,
-      isLoggedIn: action.payload,
+      user:action.payload,
+      isLoggedIn: true
     };
   default:
     return state;

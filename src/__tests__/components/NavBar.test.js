@@ -8,7 +8,8 @@ describe("SignupUser component", () => {
   const props = {
     isOpen: false,
     toggle: jest.fn(),
-    setState: jest.fn()
+    setState: jest.fn(),
+    clearToken: jest.fn()
   };
   let wrapper;
 
