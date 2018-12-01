@@ -43,7 +43,7 @@ class ViewDiaries extends Component {
 }
 ViewDiaries.propTypes = {
   dispatch: PropTypes.func.isRequired,
-  allentries: PropTypes.object,
+  allentries: PropTypes.array,
   entry: PropTypes.object,
   deleted: PropTypes.object,
   Message: PropTypes.string,

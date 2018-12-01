@@ -22,7 +22,7 @@ const EntriesView = ({ results, handleDelete }) => {
           <CardHeader>Hello, Welcome</CardHeader>
           <CardBody>
             <center>
-              <Badge color="danger" className="" id="entrymessage">
+              <Badge color="info" className="" id="entrymessage">
                 You dont have any entries yet, please first create
               </Badge>
             </center>
