@@ -1,6 +1,7 @@
 import React from "react";
 import "../static/navBar.css";
 import { clearToken } from "../utils/myHeaders";
+import CreateEntryModal  from "../components/entries/createEntry";
 import {
   Button,
   Collapse,
@@ -36,9 +37,7 @@ class NavBar extends React.Component {
             <Nav className="ml-auto" navbar>
               <ul className="navbar-nav">
                 <li className="nav-item active">
-                  <Button block color="link" id="btn_link">
-                    Create Entry
-                  </Button>
+                  <CreateEntryModal />
                 </li>
                 <li className="nav-item active">
                   <Button block color="link" id="btn_link">
@@ -51,7 +50,7 @@ class NavBar extends React.Component {
                     color="link"
                     id="btn_link"
                     href="/"
-                    onClick={()=>clearToken()}
+                    onClick={() => clearToken()}
                   >
                     Logout
                   </Button>
