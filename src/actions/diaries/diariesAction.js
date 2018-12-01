@@ -56,3 +56,24 @@ export const deleteAnEntry = id => dispatch => {
       toast.error(error, { autoClose: 3500, hideProgressBar: true });
     });
 };
+
+export const updateEntryAction = (id, data) => dispatch => {
+  return axios
+    .put(BASE_URL + `/api/v1/entries/${id}`,data, headers())
+    .then(res => {
+      toast.success(res.data.Message, {
+        autoClose: 3500,
+        hideProgressBar: true
+      });
+      dispatch({
+        type: ACTION_TYPE.MODIFY_ENTRY,
+        payload: res.data
+      });
+    })
+    .catch(error => {
+      toast.error("You can only Update today's entries!, Otherwise please Check your fields format", {
+        autoClose: 5000,
+        hideProgressBar: true
+      });
+    });
+};

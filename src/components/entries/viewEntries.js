@@ -17,7 +17,8 @@ class ViewDiaries extends Component {
   componentWillReceiveProps(nextProps) {
     if (
       nextProps.entry.Message === "your entry has been succesfully created!" ||
-      nextProps.deleted.Message === "Deleted your entry succesfully!"
+      nextProps.deleted.Message === "Deleted your entry succesfully!" ||
+      nextProps.modify.Message ==="modified your entry succesfully!"
     ) {
       this.props.dispatch(getAllEntries());
     }
@@ -45,12 +46,14 @@ ViewDiaries.propTypes = {
   allentries: PropTypes.object,
   entry: PropTypes.object,
   deleted: PropTypes.object,
-  Message: PropTypes.string
+  Message: PropTypes.string,
+  modify:PropTypes.object
 };
 const mapStateToProps = state => ({
   allentries: state.entriesReducer.entries,
   entry: state.entriesReducer.entry,
-  deleted: state.entriesReducer.deleted
+  deleted: state.entriesReducer.deleted,
+  modify:state.entriesReducer.modify
 });
 const mapDispatchToProps = dispatch => ({ dispatch });
 export { ViewDiaries as ViewDiariesTest };

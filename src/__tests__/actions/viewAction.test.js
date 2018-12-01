@@ -37,6 +37,14 @@ describe("view all entries actions", () => {
     mock.onGet(BASE_URL + `/api/v1/entries/${id}`).reply(400, {});
     deleteAnEntry({})(store.dispatch);
   });
+  it("modify entries ", () => {
+    mock.onPut(BASE_URL + `/api/v1/entries/${id}`).reply(200, {});
+    deleteAnEntry({})(store.dispatch);
+  });
+  it("modify entries failure", () => {
+    mock.onPut(BASE_URL + `/api/v1/entries/${id}`).reply(400, {});
+    deleteAnEntry({})(store.dispatch);
+  });
 });
 function configureMock() {
   mock = new MockAdapter(axios);
