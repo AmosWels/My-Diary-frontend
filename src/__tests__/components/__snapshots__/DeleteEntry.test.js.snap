@@ -3,22 +3,8 @@
 exports[`SignupUser component should render correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ViewDiaries
-    dispatch={
-      [MockFunction] {
-        "calls": Array [
-          Array [
-            [Function],
-          ],
-        ],
-        "results": Array [
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-        ],
-      }
-    }
+  Symbol(enzyme.__unrendered__): <DeleteEntryConfirm
+    handleDelete={[MockFunction]}
     store={
       Object {
         "clearActions": [Function],
@@ -29,6 +15,7 @@ ShallowWrapper {
         "subscribe": [Function],
       }
     }
+    uniqueId="1"
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -41,51 +28,33 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "function",
     "props": Object {
-      "children": <EntriesView
-        handleDelete={[Function]}
-      />,
+      "children": "Delete |",
+      "href": "#",
+      "id": "cardlink",
+      "onClick": [Function],
+      "tag": "a",
     },
     "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "handleDelete": [Function],
-        "results": undefined,
-      },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
-    "type": "div",
+    "rendered": "Delete |",
+    "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "function",
       "props": Object {
-        "children": <EntriesView
-          handleDelete={[Function]}
-        />,
+        "children": "Delete |",
+        "href": "#",
+        "id": "cardlink",
+        "onClick": [Function],
+        "tag": "a",
       },
       "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "handleDelete": [Function],
-          "results": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      "type": "div",
+      "rendered": "Delete |",
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {

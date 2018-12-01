@@ -3,22 +3,19 @@
 exports[`SignupUser component should render correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ViewDiaries
-    dispatch={
-      [MockFunction] {
-        "calls": Array [
-          Array [
-            [Function],
-          ],
-        ],
-        "results": Array [
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-        ],
+  Symbol(enzyme.__unrendered__): <CreateEntryModal
+    dispatch={[MockFunction]}
+    due_date=""
+    handleChange={[MockFunction]}
+    handleSubmit={[MockFunction]}
+    history={
+      Object {
+        "push": [MockFunction],
       }
     }
+    modalClose={[MockFunction]}
+    name=""
+    purpose=""
     store={
       Object {
         "clearActions": [Function],
@@ -29,6 +26,8 @@ ShallowWrapper {
         "subscribe": [Function],
       }
     }
+    toggle={[MockFunction]}
+    type=""
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -43,8 +42,15 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <EntriesView
-        handleDelete={[Function]}
+      "children": <CreateView
+        closemodal={[Function]}
+        due_date=""
+        handleChange={[Function]}
+        modal={false}
+        name=""
+        purpose=""
+        toggle={[Function]}
+        type=""
       />,
     },
     "ref": null,
@@ -53,8 +59,15 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
-        "handleDelete": [Function],
-        "results": undefined,
+        "classname": undefined,
+        "closemodal": [Function],
+        "due_date": "",
+        "handleChange": [Function],
+        "modal": false,
+        "name": "",
+        "purpose": "",
+        "toggle": [Function],
+        "type": "",
       },
       "ref": null,
       "rendered": null,
@@ -68,8 +81,15 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <EntriesView
-          handleDelete={[Function]}
+        "children": <CreateView
+          closemodal={[Function]}
+          due_date=""
+          handleChange={[Function]}
+          modal={false}
+          name=""
+          purpose=""
+          toggle={[Function]}
+          type=""
         />,
       },
       "ref": null,
@@ -78,8 +98,15 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "handleDelete": [Function],
-          "results": undefined,
+          "classname": undefined,
+          "closemodal": [Function],
+          "due_date": "",
+          "handleChange": [Function],
+          "modal": false,
+          "name": "",
+          "purpose": "",
+          "toggle": [Function],
+          "type": "",
         },
         "ref": null,
         "rendered": null,

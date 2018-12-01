@@ -70,14 +70,7 @@ ShallowWrapper {
               <li
                 className="nav-item active"
               >
-                <Button
-                  block={true}
-                  color="link"
-                  id="btn_link"
-                  tag="button"
-                >
-                  Create Entry
-                </Button>
+                <Connect(CreateEntryModal) />
               </li>
               <li
                 className="nav-item active"
@@ -176,14 +169,7 @@ ShallowWrapper {
                 <li
                   className="nav-item active"
                 >
-                  <Button
-                    block={true}
-                    color="link"
-                    id="btn_link"
-                    tag="button"
-                  >
-                    Create Entry
-                  </Button>
+                  <Connect(CreateEntryModal) />
                 </li>
                 <li
                   className="nav-item active"
@@ -284,14 +270,7 @@ ShallowWrapper {
                 <li
                   className="nav-item active"
                 >
-                  <Button
-                    block={true}
-                    color="link"
-                    id="btn_link"
-                    tag="button"
-                  >
-                    Create Entry
-                  </Button>
+                  <Connect(CreateEntryModal) />
                 </li>
                 <li
                   className="nav-item active"
@@ -366,14 +345,7 @@ ShallowWrapper {
                 <li
                   className="nav-item active"
                 >
-                  <Button
-                    block={true}
-                    color="link"
-                    id="btn_link"
-                    tag="button"
-                  >
-                    Create Entry
-                  </Button>
+                  <Connect(CreateEntryModal) />
                 </li>
                 <li
                   className="nav-item active"
@@ -434,14 +406,7 @@ ShallowWrapper {
                   <li
                     className="nav-item active"
                   >
-                    <Button
-                      block={true}
-                      color="link"
-                      id="btn_link"
-                      tag="button"
-                    >
-                      Create Entry
-                    </Button>
+                    <Connect(CreateEntryModal) />
                   </li>,
                   <li
                     className="nav-item active"
@@ -496,14 +461,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": <Button
-                      block={true}
-                      color="link"
-                      id="btn_link"
-                      tag="button"
-                    >
-                      Create Entry
-                    </Button>,
+                    "children": <Connect(CreateEntryModal) />,
                     "className": "nav-item active",
                   },
                   "ref": null,
@@ -511,15 +469,9 @@ ShallowWrapper {
                     "instance": null,
                     "key": undefined,
                     "nodeType": "class",
-                    "props": Object {
-                      "block": true,
-                      "children": "Create Entry",
-                      "color": "link",
-                      "id": "btn_link",
-                      "tag": "button",
-                    },
+                    "props": Object {},
                     "ref": null,
-                    "rendered": "Create Entry",
+                    "rendered": null,
                     "type": [Function],
                   },
                   "type": "li",
@@ -714,14 +666,7 @@ ShallowWrapper {
                 <li
                   className="nav-item active"
                 >
-                  <Button
-                    block={true}
-                    color="link"
-                    id="btn_link"
-                    tag="button"
-                  >
-                    Create Entry
-                  </Button>
+                  <Connect(CreateEntryModal) />
                 </li>
                 <li
                   className="nav-item active"
@@ -820,14 +765,7 @@ ShallowWrapper {
                   <li
                     className="nav-item active"
                   >
-                    <Button
-                      block={true}
-                      color="link"
-                      id="btn_link"
-                      tag="button"
-                    >
-                      Create Entry
-                    </Button>
+                    <Connect(CreateEntryModal) />
                   </li>
                   <li
                     className="nav-item active"
@@ -928,14 +866,7 @@ ShallowWrapper {
                   <li
                     className="nav-item active"
                   >
-                    <Button
-                      block={true}
-                      color="link"
-                      id="btn_link"
-                      tag="button"
-                    >
-                      Create Entry
-                    </Button>
+                    <Connect(CreateEntryModal) />
                   </li>
                   <li
                     className="nav-item active"
@@ -1010,14 +941,7 @@ ShallowWrapper {
                   <li
                     className="nav-item active"
                   >
-                    <Button
-                      block={true}
-                      color="link"
-                      id="btn_link"
-                      tag="button"
-                    >
-                      Create Entry
-                    </Button>
+                    <Connect(CreateEntryModal) />
                   </li>
                   <li
                     className="nav-item active"
@@ -1078,14 +1002,7 @@ ShallowWrapper {
                     <li
                       className="nav-item active"
                     >
-                      <Button
-                        block={true}
-                        color="link"
-                        id="btn_link"
-                        tag="button"
-                      >
-                        Create Entry
-                      </Button>
+                      <Connect(CreateEntryModal) />
                     </li>,
                     <li
                       className="nav-item active"
@@ -1140,14 +1057,7 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": <Button
-                        block={true}
-                        color="link"
-                        id="btn_link"
-                        tag="button"
-                      >
-                        Create Entry
-                      </Button>,
+                      "children": <Connect(CreateEntryModal) />,
                       "className": "nav-item active",
                     },
                     "ref": null,
@@ -1155,15 +1065,9 @@ ShallowWrapper {
                       "instance": null,
                       "key": undefined,
                       "nodeType": "class",
-                      "props": Object {
-                        "block": true,
-                        "children": "Create Entry",
-                        "color": "link",
-                        "id": "btn_link",
-                        "tag": "button",
-                      },
+                      "props": Object {},
                       "ref": null,
-                      "rendered": "Create Entry",
+                      "rendered": null,
                       "type": [Function],
                     },
                     "type": "li",

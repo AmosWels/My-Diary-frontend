@@ -1,7 +1,9 @@
 import ACTION_TYPE from "../../actions/actionTypes";
 
 const initialState = {
-  entries:[]
+  entries:[],
+  entry:{},
+  deleted:{}
 };
 
 const entriesReducer = (state = initialState, action) => {
@@ -9,7 +11,7 @@ const entriesReducer = (state = initialState, action) => {
   case ACTION_TYPE.NEW_ENTRY:
     return {
       ...state,
-      article: action.payload
+      entry: action.payload
     };
   case ACTION_TYPE.VIEW_ENTRIES:
     return {
