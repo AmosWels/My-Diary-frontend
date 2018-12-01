@@ -1,0 +1,641 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignupUser component should render correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ViewEntry
+    buttonLabel=""
+    className=""
+    date_created=""
+    dispatch={[MockFunction]}
+    due_date=""
+    name=""
+    purpose=""
+    store={
+      Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <CardLink
+          href="#"
+          id="cardlink"
+          onClick={[Function]}
+          tag="a"
+        >
+          View |
+        </CardLink>,
+        <Modal
+          autoFocus={true}
+          backdrop={true}
+          backdropTransition={
+            Object {
+              "mountOnEnter": true,
+              "timeout": 150,
+            }
+          }
+          centered={false}
+          className=""
+          fade={true}
+          isOpen={false}
+          keyboard={true}
+          modalTransition={
+            Object {
+              "timeout": 300,
+            }
+          }
+          onClosed={[Function]}
+          onOpened={[Function]}
+          role="dialog"
+          toggle={[Function]}
+          zIndex={1050}
+        >
+          <ModalHeader
+            charCode={215}
+            close={
+              <button
+                className="close"
+                onClick={[Function]}
+              >
+                ×
+              </button>
+            }
+            closeAriaLabel="Close"
+            tag="h5"
+            toggle={[Function]}
+            wrapTag="div"
+          >
+            
+          </ModalHeader>
+          <ModalBody
+            tag="div"
+          >
+            
+          </ModalBody>
+          <ModalFooter
+            tag="div"
+          >
+            <Badge
+              className="float-left"
+              color="warning"
+              pill={false}
+              tag="span"
+            >
+              Due Date - 
+              
+            </Badge>
+             
+            <Badge
+              className="float-left"
+              color="info"
+              pill={false}
+              tag="span"
+            >
+              Created On - 
+              
+            </Badge>
+          </ModalFooter>
+        </Modal>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": "View |",
+          "href": "#",
+          "id": "cardlink",
+          "onClick": [Function],
+          "tag": "a",
+        },
+        "ref": null,
+        "rendered": "View |",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "autoFocus": true,
+          "backdrop": true,
+          "backdropTransition": Object {
+            "mountOnEnter": true,
+            "timeout": 150,
+          },
+          "centered": false,
+          "children": Array [
+            <ModalHeader
+              charCode={215}
+              close={
+                <button
+                  className="close"
+                  onClick={[Function]}
+                >
+                  ×
+                </button>
+              }
+              closeAriaLabel="Close"
+              tag="h5"
+              toggle={[Function]}
+              wrapTag="div"
+            >
+              
+            </ModalHeader>,
+            <ModalBody
+              tag="div"
+            >
+              
+            </ModalBody>,
+            <ModalFooter
+              tag="div"
+            >
+              <Badge
+                className="float-left"
+                color="warning"
+                pill={false}
+                tag="span"
+              >
+                Due Date - 
+                
+              </Badge>
+               
+              <Badge
+                className="float-left"
+                color="info"
+                pill={false}
+                tag="span"
+              >
+                Created On - 
+                
+              </Badge>
+            </ModalFooter>,
+          ],
+          "className": "",
+          "fade": true,
+          "isOpen": false,
+          "keyboard": true,
+          "modalTransition": Object {
+            "timeout": 300,
+          },
+          "onClosed": [Function],
+          "onOpened": [Function],
+          "role": "dialog",
+          "toggle": [Function],
+          "zIndex": 1050,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "charCode": 215,
+              "children": "",
+              "close": <button
+                className="close"
+                onClick={[Function]}
+              >
+                ×
+              </button>,
+              "closeAriaLabel": "Close",
+              "tag": "h5",
+              "toggle": [Function],
+              "wrapTag": "div",
+            },
+            "ref": null,
+            "rendered": "",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "",
+              "tag": "div",
+            },
+            "ref": null,
+            "rendered": "",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <Badge
+                  className="float-left"
+                  color="warning"
+                  pill={false}
+                  tag="span"
+                >
+                  Due Date - 
+                  
+                </Badge>,
+                " ",
+                <Badge
+                  className="float-left"
+                  color="info"
+                  pill={false}
+                  tag="span"
+                >
+                  Created On - 
+                  
+                </Badge>,
+              ],
+              "tag": "div",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": Array [
+                    "Due Date - ",
+                    "",
+                  ],
+                  "className": "float-left",
+                  "color": "warning",
+                  "pill": false,
+                  "tag": "span",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Due Date - ",
+                  "",
+                ],
+                "type": [Function],
+              },
+              " ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": Array [
+                    "Created On - ",
+                    "",
+                  ],
+                  "className": "float-left",
+                  "color": "info",
+                  "pill": false,
+                  "tag": "span",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Created On - ",
+                  "",
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <CardLink
+            href="#"
+            id="cardlink"
+            onClick={[Function]}
+            tag="a"
+          >
+            View |
+          </CardLink>,
+          <Modal
+            autoFocus={true}
+            backdrop={true}
+            backdropTransition={
+              Object {
+                "mountOnEnter": true,
+                "timeout": 150,
+              }
+            }
+            centered={false}
+            className=""
+            fade={true}
+            isOpen={false}
+            keyboard={true}
+            modalTransition={
+              Object {
+                "timeout": 300,
+              }
+            }
+            onClosed={[Function]}
+            onOpened={[Function]}
+            role="dialog"
+            toggle={[Function]}
+            zIndex={1050}
+          >
+            <ModalHeader
+              charCode={215}
+              close={
+                <button
+                  className="close"
+                  onClick={[Function]}
+                >
+                  ×
+                </button>
+              }
+              closeAriaLabel="Close"
+              tag="h5"
+              toggle={[Function]}
+              wrapTag="div"
+            >
+              
+            </ModalHeader>
+            <ModalBody
+              tag="div"
+            >
+              
+            </ModalBody>
+            <ModalFooter
+              tag="div"
+            >
+              <Badge
+                className="float-left"
+                color="warning"
+                pill={false}
+                tag="span"
+              >
+                Due Date - 
+                
+              </Badge>
+               
+              <Badge
+                className="float-left"
+                color="info"
+                pill={false}
+                tag="span"
+              >
+                Created On - 
+                
+              </Badge>
+            </ModalFooter>
+          </Modal>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": "View |",
+            "href": "#",
+            "id": "cardlink",
+            "onClick": [Function],
+            "tag": "a",
+          },
+          "ref": null,
+          "rendered": "View |",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "autoFocus": true,
+            "backdrop": true,
+            "backdropTransition": Object {
+              "mountOnEnter": true,
+              "timeout": 150,
+            },
+            "centered": false,
+            "children": Array [
+              <ModalHeader
+                charCode={215}
+                close={
+                  <button
+                    className="close"
+                    onClick={[Function]}
+                  >
+                    ×
+                  </button>
+                }
+                closeAriaLabel="Close"
+                tag="h5"
+                toggle={[Function]}
+                wrapTag="div"
+              >
+                
+              </ModalHeader>,
+              <ModalBody
+                tag="div"
+              >
+                
+              </ModalBody>,
+              <ModalFooter
+                tag="div"
+              >
+                <Badge
+                  className="float-left"
+                  color="warning"
+                  pill={false}
+                  tag="span"
+                >
+                  Due Date - 
+                  
+                </Badge>
+                 
+                <Badge
+                  className="float-left"
+                  color="info"
+                  pill={false}
+                  tag="span"
+                >
+                  Created On - 
+                  
+                </Badge>
+              </ModalFooter>,
+            ],
+            "className": "",
+            "fade": true,
+            "isOpen": false,
+            "keyboard": true,
+            "modalTransition": Object {
+              "timeout": 300,
+            },
+            "onClosed": [Function],
+            "onOpened": [Function],
+            "role": "dialog",
+            "toggle": [Function],
+            "zIndex": 1050,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "charCode": 215,
+                "children": "",
+                "close": <button
+                  className="close"
+                  onClick={[Function]}
+                >
+                  ×
+                </button>,
+                "closeAriaLabel": "Close",
+                "tag": "h5",
+                "toggle": [Function],
+                "wrapTag": "div",
+              },
+              "ref": null,
+              "rendered": "",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "",
+                "tag": "div",
+              },
+              "ref": null,
+              "rendered": "",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <Badge
+                    className="float-left"
+                    color="warning"
+                    pill={false}
+                    tag="span"
+                  >
+                    Due Date - 
+                    
+                  </Badge>,
+                  " ",
+                  <Badge
+                    className="float-left"
+                    color="info"
+                    pill={false}
+                    tag="span"
+                  >
+                    Created On - 
+                    
+                  </Badge>,
+                ],
+                "tag": "div",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": Array [
+                      "Due Date - ",
+                      "",
+                    ],
+                    "className": "float-left",
+                    "color": "warning",
+                    "pill": false,
+                    "tag": "span",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Due Date - ",
+                    "",
+                  ],
+                  "type": [Function],
+                },
+                " ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": Array [
+                      "Created On - ",
+                      "",
+                    ],
+                    "className": "float-left",
+                    "color": "info",
+                    "pill": false,
+                    "tag": "span",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Created On - ",
+                    "",
+                  ],
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

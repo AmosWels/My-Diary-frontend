@@ -51,7 +51,7 @@ class NavBar extends React.Component {
                     id="btn_link"
                     href="/"
                     onClick={() => clearToken()}
-                  >
+                  > 
                     Logout
                   </Button>
                 </li>
