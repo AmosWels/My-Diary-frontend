@@ -3,7 +3,8 @@ import ACTION_TYPE from "../../actions/actionTypes";
 const initialState = {
   entries:[],
   entry:{},
-  deleted:{}
+  deleted:{},
+  modify:{}
 };
 
 const entriesReducer = (state = initialState, action) => {
@@ -27,6 +28,11 @@ const entriesReducer = (state = initialState, action) => {
     return {
       ...state,
       deleted: action.payload
+    };
+  case ACTION_TYPE.MODIFY_ENTRY:
+    return {
+      ...state,
+      modify: action.payload
     };
   default:
     return state;

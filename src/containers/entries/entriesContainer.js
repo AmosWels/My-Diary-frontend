@@ -3,10 +3,10 @@ import PropTypes from "prop-types";
 import NavBar from "../../navigation/navBar";
 import DeleteEntryConfirm from "../../components/entries/deleteEntry";
 import ViewEntry from "../../components/entries/viewEntry";
+import EditEntryModal from "../../components/entries/editEntry";
 import {
   Badge,
   Card,
-  CardLink,
   CardBody,
   CardHeader,
   Col,
@@ -37,9 +37,13 @@ const EntriesView = ({ results, handleDelete }) => {
           <CardHeader>
             {entry.name}{" "}
             <div className="d-inline actions">
-              <CardLink id="cardlink" href="#">
-                Edit |
-              </CardLink>
+              <EditEntryModal
+                uniqueId={entry.id}
+                name={entry.name}
+                purpose={entry.purpose}
+                due_date={entry.due_date}
+                type={entry.type}
+              />
               <ViewEntry
                 name={entry.name}
                 purpose={entry.purpose}

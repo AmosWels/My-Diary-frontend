@@ -1,17 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import CreateView from "../../containers/entries/createEntryContainer";
-import { createEntryAction } from "../../actions/diaries/diariesAction";
-class CreateEntryModal extends React.Component {
+import EditView from "../../containers/entries/editEntryContainer";
+import { updateEntryAction } from "../../actions/diaries/diariesAction";
+
+class EditEntryModal extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       modal: false,
-      due_date: "",
-      name: "",
-      purpose: "",
-      type: ""
+      due_date: this.props.due_date,
+      name: this.props.name,
+      purpose: this.props.purpose,
+      type: this.props.type
     };
   }
 
@@ -27,26 +28,26 @@ class CreateEntryModal extends React.Component {
     });
   };
 
-  handleSubmit = () => {
+  handleUpdate = () => {
     const data = {
       due_date: this.state.due_date,
       name: this.state.name,
       purpose: this.state.purpose,
       type: this.state.type
     };
-    this.props.dispatch(createEntryAction(data));
+    this.props.dispatch(updateEntryAction(this.props.uniqueId,data));
   };
   modalClose = () => {
     this.toggle();
-    this.handleSubmit();
+    this.handleUpdate();
   };
 
   render() {
     const { modal, due_date, name, purpose, type } = this.state;
     const classname = this.props.className;
     return (
-      <div>
-        <CreateView
+      <React.Fragment>
+        <EditView
           toggle={this.toggle}
           modal={modal}
           name={name}
@@ -56,22 +57,25 @@ class CreateEntryModal extends React.Component {
           classname={classname}
           closemodal={this.modalClose}
           handleChange={this.handleChange}
+          props={this.props}
         />
-      </div>
+      </React.Fragment>
     );
   }
 }
-CreateEntryModal.propTypes = {
+EditEntryModal.propTypes = {
   emailShare: PropTypes.func,
   className: PropTypes.string,
-  dispatch: PropTypes.func
+  dispatch: PropTypes.func,
+  props: PropTypes.object,
+  uniqueId:PropTypes.string
 };
 const mapDispatchToProps = dispatch => ({ dispatch });
 const mapStateToProps = state => ({
   articles: state.articlesReducer
 });
-export {CreateEntryModal as CreateEntryModalTest};
+export {EditEntryModal as EditEntryModalTest};
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(CreateEntryModal);
+)(EditEntryModal);
