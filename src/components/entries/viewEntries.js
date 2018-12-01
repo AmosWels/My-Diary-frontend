@@ -1,14 +1,31 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
-import { getAllEntries } from "../../actions/diaries/diariesAction";
+import {
+  getAllEntries,
+  deleteAnEntry
+} from "../../actions/diaries/diariesAction";
 import EntriesView from "../../containers/entries/entriesContainer";
 
 class ViewDiaries extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      warning: false
+    };
   }
+  componentWillReceiveProps(nextProps) {
+    if (
+      nextProps.entry.Message === "your entry has been succesfully created!" ||
+      nextProps.deleted.Message === "Deleted your entry succesfully!"
+    ) {
+      this.props.dispatch(getAllEntries());
+    }
+  }
+
+  handleDelete = id => {
+    this.props.dispatch(deleteAnEntry(id));
+  };
 
   componentDidMount() {
     this.props.dispatch(getAllEntries());
@@ -18,17 +35,22 @@ class ViewDiaries extends Component {
     const entries = this.props.allentries;
     return (
       <div>
-        <EntriesView results={entries} />
+        <EntriesView results={entries} handleDelete={this.handleDelete} />
       </div>
     );
   }
 }
 ViewDiaries.propTypes = {
   dispatch: PropTypes.func.isRequired,
-  allentries: PropTypes.object
+  allentries: PropTypes.object,
+  entry: PropTypes.object,
+  deleted: PropTypes.object,
+  Message: PropTypes.string
 };
 const mapStateToProps = state => ({
-  allentries: state.entriesReducer.entries
+  allentries: state.entriesReducer.entries,
+  entry: state.entriesReducer.entry,
+  deleted: state.entriesReducer.deleted
 });
 const mapDispatchToProps = dispatch => ({ dispatch });
 export { ViewDiaries as ViewDiariesTest };

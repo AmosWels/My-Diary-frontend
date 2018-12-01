@@ -43,7 +43,9 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <EntriesView />,
+      "children": <EntriesView
+        handleDelete={[Function]}
+      />,
     },
     "ref": null,
     "rendered": Object {
@@ -51,6 +53,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
+        "handleDelete": [Function],
         "results": undefined,
       },
       "ref": null,
@@ -65,7 +68,9 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <EntriesView />,
+        "children": <EntriesView
+          handleDelete={[Function]}
+        />,
       },
       "ref": null,
       "rendered": Object {
@@ -73,6 +78,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "handleDelete": [Function],
           "results": undefined,
         },
         "ref": null,
