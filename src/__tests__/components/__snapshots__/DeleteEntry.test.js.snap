@@ -5,6 +5,7 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <DeleteEntryConfirm
     handleDelete={[MockFunction]}
+    onClick={[MockFunction]}
     store={
       Object {
         "clearActions": [Function],
@@ -15,6 +16,8 @@ ShallowWrapper {
         "subscribe": [Function],
       }
     }
+    submit={[MockFunction]}
+    uniqueId={1}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],

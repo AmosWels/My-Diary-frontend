@@ -44,7 +44,7 @@ class ViewEntry extends React.Component {
           <ModalHeader toggle={this.toggle} close={closeBtn}>
             {this.props.name}
           </ModalHeader>
-          <ModalBody>{this.props.purpose}</ModalBody>
+          <ModalBody id="scrollview">{this.props.purpose}</ModalBody>
           <ModalFooter>
             <Badge color="warning" className="float-left">
               Due Date - {this.props.due_date}

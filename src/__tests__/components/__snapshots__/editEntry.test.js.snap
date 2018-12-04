@@ -4,6 +4,7 @@ exports[`SignupUser component component should render correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <EditEntryModal
+    dispatch={[MockFunction]}
     handleChange={[MockFunction]}
     handleUpdate={[MockFunction]}
     name="peter"
@@ -39,6 +40,7 @@ ShallowWrapper {
         name="peter"
         props={
           Object {
+            "dispatch": [MockFunction],
             "handleChange": [MockFunction],
             "handleUpdate": [MockFunction],
             "name": "peter",
@@ -70,6 +72,7 @@ ShallowWrapper {
         "modal": false,
         "name": "peter",
         "props": Object {
+          "dispatch": [MockFunction],
           "handleChange": [MockFunction],
           "handleUpdate": [MockFunction],
           "name": "peter",
@@ -106,6 +109,7 @@ ShallowWrapper {
           name="peter"
           props={
             Object {
+              "dispatch": [MockFunction],
               "handleChange": [MockFunction],
               "handleUpdate": [MockFunction],
               "name": "peter",
@@ -137,6 +141,7 @@ ShallowWrapper {
           "modal": false,
           "name": "peter",
           "props": Object {
+            "dispatch": [MockFunction],
             "handleChange": [MockFunction],
             "handleUpdate": [MockFunction],
             "name": "peter",

@@ -4,8 +4,11 @@ exports[`SignupUser component component should render correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <CreateEntryModal
+    dispatch={[MockFunction]}
     handleChange={[MockFunction]}
+    handleSubmit={[MockFunction]}
     handleUpdate={[MockFunction]}
+    modalClose={[MockFunction]}
     name=""
     store={
       Object {
@@ -17,6 +20,7 @@ ShallowWrapper {
         "subscribe": [Function],
       }
     }
+    toggle={[MockFunction]}
     type=""
   />,
   Symbol(enzyme.__renderer__): Object {

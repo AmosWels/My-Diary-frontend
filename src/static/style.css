@@ -182,3 +182,7 @@ a:hover {
 #entrymessage{
   font-size: 16px;
 }
+#scrollview{
+  max-height: 400px;
+  overflow-y: auto;
+}

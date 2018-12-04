@@ -6,7 +6,7 @@ import Adapter from "enzyme-adapter-react-16";
 configure({ adapter: new Adapter() });
 
 describe("SignupUser component", () => {
-  const history = {push : jest.fn()};
+  const history = { push: jest.fn() };
   const props = {
     history,
     handleChange: jest.fn(),
@@ -14,7 +14,7 @@ describe("SignupUser component", () => {
     dispatch: jest.fn(),
     username: "",
     password: "",
-    confirm_password: "",
+    confirm_password: "sdf",
     location: { pathname: "/auth/signup" }
   };
   const getEvent = (name = "", value = "") => ({
@@ -47,21 +47,26 @@ describe("SignupUser component", () => {
 
   it("should not redirect after signup failure", () => {
     const nextprops = {
-      user:{
-        user:{ Message:"Created Succesfull"}
+      user: {
+        user: { Message: "Created Succesfull" }
       }
     };
-    wrapper.setProps({...nextprops});
+    wrapper.setProps({ ...nextprops });
     expect(history.push).not.toBeCalled();
   });
 
   it("should redirect after succesful signup", () => {
     const nextprops = {
-      user:{
-        user:{ Message:"Created Succesfully"}
+      user: {
+        user: { Message: "Created Succesfully" }
       }
     };
-    wrapper.setProps({...nextprops});
+    wrapper.setProps({ ...nextprops });
     expect(history.push).toBeCalled();
+  });
+
+  it("should handle password dont match ", () => {
+    wrapper.instance().handleSignup(getEvent("password", "johnson"));
+    expect(wrapper.state().confirm_password).not.toEqual("dfd");
   });
 });

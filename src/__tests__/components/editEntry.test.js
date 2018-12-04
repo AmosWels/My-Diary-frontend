@@ -9,6 +9,7 @@ describe("SignupUser component", () => {
   const props = {
     handleUpdate: jest.fn(),
     handleChange: jest.fn(),
+    dispatch: jest.fn(),
     name: "peter",
     type: ""
   };
@@ -31,5 +32,10 @@ describe("SignupUser component", () => {
   it("should set state when handle change is called", () => {
     wrapper.instance().handleChange(getEvent("name", "johnson"));
     expect(wrapper.state().name).toBeUndefined;
+  });
+  it("component should have toggle called", () => {
+    const mySpy = jest.spyOn(wrapper.instance(), "modalClose");
+    expect(mySpy).toHaveBeenCalledTimes(0);
+    expect(wrapper.instance().modalClose()).toBeFalsy();
   });
 });

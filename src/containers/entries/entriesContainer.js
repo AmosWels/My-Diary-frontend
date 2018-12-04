@@ -60,7 +60,7 @@ const EntriesView = ({ results, handleDelete }) => {
           <Badge color="warning" className="float-left">
             Due Date - {entry.due_date}
           </Badge>
-          <CardBody>{entry.purpose.substring(0, 62)} . . .</CardBody>
+          <CardBody>{entry.purpose.substring(0, 30)} . . .</CardBody>
           <CardFooter>
             <Badge color="info" className="float-left">
               Created On - {entry.date_created}

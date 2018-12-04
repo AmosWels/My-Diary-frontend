@@ -15,7 +15,7 @@ describe("SignupUser component", () => {
     username: "",
     password: "",
     confirm_password: "",
-    location: { pathname: "/entries" }
+    window: { location: "/entries" }
   };
   const getEvent = (name = "", value = "") => ({
     preventDefault: jest.fn(),
@@ -55,13 +55,12 @@ describe("SignupUser component", () => {
     expect(history.push).not.toBeCalled();
   });
 
-  // it("should redirect after succesful signup", () => {
-  //   const nextprops = {
-  //     userdata: {
-  //       isLoggedIn: { Message: "welcome, you have succesfully logged in !!!" }
-  //     }
-  //   };
-  //   wrapper.setProps({ ...nextprops });
-  //   expect(history.push).toBeCalled();
-  // });
+  it("test view run component will receive props", () => {
+    wrapper.setProps({
+      userdata: {
+        isLoggedIn: true,
+        user: ""
+      }
+    });
+  });
 });
