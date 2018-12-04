@@ -1,6 +1,7 @@
 import MockAdapter from "axios-mock-adapter";
 import configureMockStore from "redux-mock-store";
 import { API_URLS } from "../../appUrls";
+import userSignUp from "../../reducers/authReducer/signupReducer";
 import axios from "axios";
 import { signupAction } from "../../actions/auth/signupAction";
 
@@ -25,3 +26,22 @@ function configureMock() {
   const mockStore = configureMockStore();
   store = mockStore({});
 }
+describe("test login reducer", () => {
+  const initialState = {
+    user: {},
+  };
+  beforeEach(() => {
+    configureMock();
+  });
+  it("it should signup user", () => {
+    expect(
+      userSignUp(initialState, {
+        type: "SIGNUP_ACTION",
+        payload: {}
+      })
+    ).toEqual({
+      user: {},
+    });
+  });
+});
+

@@ -94,9 +94,9 @@ const CreateView = ({
 };
 CreateView.propTypes = {
   closemodal: PropTypes.func,
-  handleChange: PropTypes,
+  handleChange: PropTypes.func,
   toggle: PropTypes.func,
-  modal: PropTypes.string,
+  modal: PropTypes.bool,
   classname: PropTypes.string,
   name: PropTypes.string,
   due_date: PropTypes.string,

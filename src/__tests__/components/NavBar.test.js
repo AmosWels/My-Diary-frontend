@@ -19,4 +19,9 @@ describe("SignupUser component", () => {
   it("should render correctly", () => {
     expect(wrapper).toMatchSnapshot();
   });
+  it("toggle should be called", () => {
+    const mySpy = jest.spyOn(wrapper.instance(), "toggle");
+    wrapper.find("NavbarToggler").simulate("click");
+    expect(mySpy).toHaveBeenCalledTimes(0);
+  });
 });

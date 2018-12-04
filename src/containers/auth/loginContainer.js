@@ -74,7 +74,6 @@ const LoginView = ({ handleLogin, handleChange, username, password }) => {
                         </Col>
                         <Col xs="6" className="text-right">
                           <Button color="link" className="px-0">
-                            Forgot password?
                           </Button>
                         </Col>
                       </Row>

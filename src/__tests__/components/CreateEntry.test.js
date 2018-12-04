@@ -9,6 +9,7 @@ describe("SignupUser component", () => {
   const props = {
     handleUpdate: jest.fn(),
     handleChange: jest.fn(),
+    dispatch: jest.fn(),
     name: "",
     type: ""
   };
@@ -20,16 +21,32 @@ describe("SignupUser component", () => {
   });
   const mockStore = configureMockStore();
   let wrapper;
+  const modalClose = jest.fn();
+  const toggle = jest.fn();
+  const handleSubmit = jest.fn();
 
   beforeEach(() => {
     const store = mockStore({});
-    wrapper = shallow(<CreateEntryModalTest {...props} store={store} />);
+    wrapper = shallow(
+      <CreateEntryModalTest
+        {...props}
+        store={store}
+        modalClose={modalClose}
+        toggle={toggle}
+        handleSubmit={handleSubmit}
+      />
+    );
   });
   it("component should render correctly", () => {
     expect(wrapper).toMatchSnapshot();
   });
   it("should set state when handle change is called", () => {
     wrapper.instance().handleChange(getEvent("name", "johnson"));
-    expect(wrapper.state().name).toBeUndefined;
+    expect("name" in wrapper.state()).toBeUndefined;
+  });
+  it("should close the modal when modalClose is called", () => {
+    const mySpy = jest.spyOn(wrapper.instance(), "modalClose");
+    expect(mySpy).toHaveBeenCalledTimes(0);
+    expect(wrapper.instance().modalClose()).toBeFalsy();
   });
 });

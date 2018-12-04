@@ -13,11 +13,6 @@ ShallowWrapper {
         "push": [MockFunction],
       }
     }
-    location={
-      Object {
-        "pathname": "/entries",
-      }
-    }
     password=""
     store={
       Object {
@@ -30,6 +25,11 @@ ShallowWrapper {
       }
     }
     username=""
+    window={
+      Object {
+        "location": "/entries",
+      }
+    }
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -54,11 +54,6 @@ ShallowWrapper {
             "push": [MockFunction],
           }
         }
-        location={
-          Object {
-            "pathname": "/entries",
-          }
-        }
         password=""
         store={
           Object {
@@ -71,6 +66,11 @@ ShallowWrapper {
           }
         }
         username=""
+        window={
+          Object {
+            "location": "/entries",
+          }
+        }
       />,
     },
     "ref": null,
@@ -86,9 +86,6 @@ ShallowWrapper {
         "history": Object {
           "push": [MockFunction],
         },
-        "location": Object {
-          "pathname": "/entries",
-        },
         "password": "",
         "store": Object {
           "clearActions": [Function],
@@ -99,6 +96,9 @@ ShallowWrapper {
           "subscribe": [Function],
         },
         "username": "",
+        "window": Object {
+          "location": "/entries",
+        },
       },
       "ref": null,
       "rendered": null,
@@ -122,11 +122,6 @@ ShallowWrapper {
               "push": [MockFunction],
             }
           }
-          location={
-            Object {
-              "pathname": "/entries",
-            }
-          }
           password=""
           store={
             Object {
@@ -139,6 +134,11 @@ ShallowWrapper {
             }
           }
           username=""
+          window={
+            Object {
+              "location": "/entries",
+            }
+          }
         />,
       },
       "ref": null,
@@ -154,9 +154,6 @@ ShallowWrapper {
           "history": Object {
             "push": [MockFunction],
           },
-          "location": Object {
-            "pathname": "/entries",
-          },
           "password": "",
           "store": Object {
             "clearActions": [Function],
@@ -167,6 +164,9 @@ ShallowWrapper {
             "subscribe": [Function],
           },
           "username": "",
+          "window": Object {
+            "location": "/entries",
+          },
         },
         "ref": null,
         "rendered": null,
